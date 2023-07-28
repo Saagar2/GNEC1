@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aushadaanam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+   header {
+      background-color: #B71C1C; /* Dark Red */
+      padding: 10px;
+    }
+
+    nav {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      line-height: 24px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 120px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #FFFFFF; /* White */
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: #FFFFFF; /* White */
+      color: #B71C1C; /* Dark Red */
+    }
+
+    nav ul li a.home {
+      text-decoration: underline;
+    }
+
+    .donate-btn {
+      background-color: #FFFFFF; /* White */
+      color: #B71C1C; /* Dark Red */
+      border-radius: 3px;
+      padding: 8px 12px;
+      font-weight: bold;
+    }
+    .card-container {
+      width: auto;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-image {
+      flex: 0 0 200px;
+      margin-right: 20px;
+      margin: 40px;
+    }
+
+    .card-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+      color: green;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .donate-medical-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+  footer {
+      background-color: #B71C1C; /* Darker Red */
+      color: #FFFFFF; /* White */
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/home/sagarjha/GNEC/Logo.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="/home/sagarjha/GNEC/Home.html">Home</a></li>
+        <li><a href="/home/sagarjha/GNEC/About.html">About</a></li>
+        <li><a href="/home/sagarjha/GNEC/Fund.html">Raise Fund</a></li>
+        <li><a href="https://www.un.org/pga/73/event/universal-health-coverage/">United Nation</a></li>
+        <li><a href="/home/sagarjha/GNEC/Contact.html">Contact</a></li>
+        <li><a href="https://blue-librarian-llnhb.pwskills.app:5500" class="donate-btn">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="data:image/jpeg;base64,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">
+      </div>
+      <div class="card-content">
+        <h2 class="campaign-title">Support Free Medical Facilities</h2>
+        <p class="campaign-description">Aushadaanam aims to provide free medical facilities to the underprivileged. By supporting this cause, you can help improve healthcare access for the poor and ensure they receive quality medical treatments.</p>
+        <p class="campaign-description">Your generous contribution will enable us to set up medical centers, provide medicines, and medical equipment to those in need.</p>
+        <p class="campaign-description">Every donation counts and makes a significant impact on the lives of those who cannot afford proper healthcare. Together, we can make a difference and contribute to good health and well-being for all.</p>
+        <p class="campaign-description">Click the button below to donate for medical facilities:</p>
+        <p><a href="https://blue-librarian-llnhb.pwskills.app:5500/class="donate-medical-btn">Donate Now</a></p>
+        <p class="campaign-description">If you have any questions or need more information, please <a href="/home/sagarjha/charitty/Contactus.html" class="donate-link">contact us</a>.</p>
+      </div>
+    </div>
+
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStsW6orQqJORGHL3WSmtNFgsBrQChckOlQ-Q&usqp=CAU">
+      </div>
+      <div class="card-content">
+        <h2 class="campaign-title">Support Equitable Healthcare Distribution</h2>
+        <p class="campaign-description">Join us in our mission to reduce inequalities in healthcare access. Aushadaanam focuses on providing equitable medical facilities to those who are facing medical poverty and lack access to healthcare services.</p>
+        <p class="campaign-description">Your contribution can make a real difference in the lives of those who are struggling to afford medical expenses. By donating, you can help us create a healthier and more inclusive society.</p>
+        <p class="campaign-description">Together, we can ensure that everyone, regardless of their financial situation, can access proper medical treatments and facilities.</p>
+        <p class="campaign-description">Click the button below to support equitable healthcare distribution:</p>
+        <p><a href="https://blue-librarian-llnhb.pwskills.app:5500" class="donate-medical-btn">Donate Now</a></p>
+        <p class="campaign-description">If you have any questions or need more details, please <a href="/home/sagarjha/charitty/Contactus.html" class="donate-link">get in touch</a>.</p>
+      </div>
+    </div>
+  
+
+  </div>
+<footer>
+    <p>&copy; 2023 Aushadaanam All rights reserved.</p>
+</footer>
+
+</body>
+</html>
